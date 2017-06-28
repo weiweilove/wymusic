@@ -1,0 +1,70 @@
+.MF-mian {
+    width: 980px;
+    height: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #D3D3D3;
+}
+
+.n-pglg {
+    width: 807px;
+    height: 268px;
+    margin: 0 auto 0;
+    padding-top: 104px;
+}
+.myMusic-login {
+    width: 807px;
+    height: 268px;
+    position: relative;
+    background: url("../img/mymusic.png") no-repeat;
+}
+
+.login-btn {
+    display: block;
+    width: 167px;
+    height: 45px;
+    position: absolute;
+    bottom: 21px;
+    right: 158px;
+    text-indent: -2000px;
+    background:  url("../img/mymusic.png") no-repeat -482px -202px;
+}
+.login-btn:hover {
+    background-position: 0 -278px;
+}
+
+.n-pglg2 {
+    width: 902px;
+    height: 414px;
+    margin: 0 auto 0;
+    padding-top: 70px;
+}
+
+.friends-login {
+    width: 902px;
+    height: 430px;
+    position: relative;
+    background: url("../img/friends.jpg") no-repeat;
+}
+.friends-login p {
+    padding: 178px 0 0 535px;
+    line-height: 23px;
+    color: #666;
+    font-size: 14px;
+}
+.friends-login-btn {
+    display: block;
+    width: 159px;
+    height: 50px;
+    position: absolute;
+    bottom: 120px;
+    right: 208px;
+    text-indent: -2000px;
+    background: url("../img/friends.jpg") no-repeat -535px -260px;
+}
+.friends-login-btn:hover {
+    background-position: 0 -430px;
+}
+
+
+

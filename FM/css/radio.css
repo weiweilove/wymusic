@@ -1,0 +1,338 @@
+/*版心*/
+.heart {
+	width: 980px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-left: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
+}
+
+
+/*list部分开始*/
+
+.list {
+	width: 980px;
+	height: 209px;
+	padding-top: 40px;
+
+}
+.list  li{
+	width: 68px;
+	height: 68px;
+	float: left;
+	text-align: center;
+	margin: 0 0 25px 33px;
+
+	
+}
+.list a {
+	display: inline-block;
+	width: 68px;
+	height: 68px;
+	text-decoration: none;
+}
+.list div {
+	height: 48px;
+	width: 48px;
+	margin: 2px auto 0;
+}
+.dv1 {
+	background: url("../img/sprite1.png") no-repeat 0 0;
+}
+.dv2 {
+	background: url("../img/sprite1.png") no-repeat -137px 0;
+}
+.dv3 {
+	background: url("../img/sprite1.png") no-repeat 0 -61px;
+}
+.dv4 {
+	background: url("../img/sprite1.png") no-repeat -137px -61px;
+}
+.dv5 {
+	background: url("../img/sprite1.png") no-repeat 0 -125px;
+}
+.dv6 {
+	background: url("../img/sprite1.png") no-repeat -137px -125px;
+}
+.dv7 {
+	background: url("../img/sprite1.png") no-repeat 0 -190px;
+}
+.dv8 {
+	background: url("../img/sprite1.png") no-repeat -137px -190px;
+}
+.dv9 {
+	background: url("../img/sprite1.png") no-repeat 0 -245px;
+}
+.dv10 {
+	background: url("../img/sprite1.png") no-repeat -137px -245px;
+}
+.dv11 {
+	background: url("../img/sprite1.png") no-repeat 0 -316px;
+}
+.dv12 {
+	background: url("../img/sprite1.png") no-repeat -137px -316px;
+}
+.dv13 {
+	background: url("../img/sprite1.png") no-repeat 0 -384px;
+}
+.dv14 {
+	background: url("../img/sprite1.png") no-repeat -137px -384px;
+}
+.dv15 {
+	background: url("../img/sprite1.png") no-repeat 0 -446px;
+}
+.dv16 {
+	background: url("../img/sprite1.png") no-repeat -137px -446px;
+}
+.dv17 {
+	background: url("../img/sprite1.png") no-repeat 0 -508px;
+}
+.dv18 {
+	background: url("../img/sprite1.png") no-repeat -137px -508px;
+}
+
+
+.list i {
+	height: 12px;
+	color: #888;
+}
+.list a:hover{
+	background-color: #f6f7f7;
+	border-radius: 6px;
+} 
+
+.lists-js {
+	color: #db5e5e;
+	border: 2px solid #db5e5e;
+}
+
+/*list部分结束*/
+
+/*节目 program 部分开始*/
+.program {
+	height: 643px;
+	width: 900px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.program-left {
+	width: 424px;
+	height: 600px;
+	float: left;
+
+}
+
+.t-title {
+	height: 40px;
+	line-height: 35px;
+	border-bottom: 2px solid #c20c0c;
+}
+.t-title h3 {
+	float: left;
+	font-weight: normal;
+}
+.t-title-a {
+	font-family: "microsoft yahei";
+	font-size: 24px;
+}
+.morea {
+	float: right;
+}
+
+
+.program-left ul, .program-right ul {
+	border:1px solid #e2e2e2;
+	border-top: 0;
+	height: 600px;
+}
+.program-left li, .program-right li {
+	height: 40px;
+	padding: 10px 0;
+	line-height: 40px;
+	width: 422px;
+
+}
+.program-left .cen-a {
+	margin-left: 20px;
+	float: left;
+	position: relative;
+}
+#ulleft .cen-dv {
+	float: left;
+	width: 254px;
+	height: 40px;
+	margin: 1px 0 0 10px;
+	line-height: 20px;
+	font-size: 14px;
+}
+.cen-dv  h4 a {
+	color: #333;
+
+}
+.cen-dv p a{
+	color: #999;
+}
+.right-a {
+	display: inline-block;
+	height: 16px;
+	width: 65px;
+	border: 1px solid #999;
+	line-height: 16px;
+	text-align: center;
+	text-decoration: none;
+}
+a.right-a {
+	color: #999;
+}
+
+.program-right {
+	width: 424px;
+	height: 600px;
+	float: right;
+}
+.program-right .cen-a {
+	float: left;
+}
+.item {
+	width: 47px;
+	margin: 6px 0 0 0;
+	text-align: center;
+	line-height: normal;
+	float: left;
+}
+#ulright  em {
+	display: block;
+	width: 47px;
+	font-size: 14px;
+	height: 16px;
+	color: #da4545;
+	text-align: center;
+
+}
+#ulright .cen-dv {
+	width: 208px;
+	float: left;
+	height: 40px;
+	margin: 1px 0 0 10px;
+	line-height: 20px;
+	font-size: 14px;
+}
+#ulright i {
+	width: 16px;
+	height: 17px;
+	display: inline-block;
+	background: url("../img/icon.png") no-repeat 0 9999px;
+	overflow: hidden;
+	vertical-align: middle;
+}
+#ulright .icon1 {
+	background-position: -67px -283px;
+
+}
+#ulright span {
+	display: inline-block;
+	width: 14px;
+	height: 13px;
+
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#ulright .icon2 {
+	/*color: #4abbeb;*/
+	width: 6px;
+	height:6px;
+	background-position: -74px -324px;
+	vertical-align: middle;
+
+}
+#ulright .icon3 {
+	width: 6px;
+	height:6px;
+	background-position: -74px -304px;
+	vertical-align: middle;
+
+}
+/*.programJS {*/
+	/*display: inline-block;*/
+	/*width: 22px;*/
+	/*height: 22px;*/
+	/*left: 5px;*/
+	/*top: 5px;*/
+
+/*}*/
+.fang {
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	background: url("../img/iconall.png") no-repeat 0 -86px;
+	top:9px;
+	left: 9px;
+	display: none;
+
+}
+
+/*节目 program 部分结束*/
+
+
+
+/*music部分开始*/
+.music, .article, .showw, .feeling, .create, .history {
+	height: 364px;
+	padding-top: 35px;
+	width: 980px;
+
+}
+
+.t-title span {
+	display: inline-block;
+	width: 75px;
+	height: 34px;
+	font-family: simsun,\5b8b\4f53;
+	font-size: 24px;
+	font-weight: 700;
+}
+.u-title {
+	margin-left:40px;
+	margin-right:40px;
+}
+
+.allli {
+	height: 324px;
+	/*background-color: green;*/
+}
+
+.allli li {
+	float: left;
+	width: 430px;
+	height: 120px;
+	padding: 20px 0;
+	border-bottom: 1px solid #e7e7e7;
+	margin-left: 40px;
+
+}
+.allli img {
+	width: 120px;
+	height: 120px;
+	float: left;
+}
+
+.allli div {
+	float: left;
+	width: 290px;
+	height: 61px;
+	margin: 16px 0 0px 20px;
+}
+.allli h4 a {
+	font-size: 18px;
+	display: block;
+	height: 30px;
+}
+.allli p {
+	color: #999;
+	margin-bottom: 6px;
+	line-height: 66px;
+
+
+}
+/*music部分结束*/

@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/*清除样式*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px/20px Arial, Helvetica, sans-serif;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+table,
+td,
+tr,
+th {
+    font-size: 12px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+
+address,
+cite,
+code,
+em,
+th,
+i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+
+a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+    font-family:  Arial, Helvetica, sans-serif
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/*清除样式*/
+.back{
+    width: 7px;
+    height: 42px;
+    position: fixed;
+    right: 160px;
+    bottom: 150px;
+    opacity: 0;
+    display: none;
+}
+/*top顶部开始*/
+.top{
+    height: 105px;
+}
+.top-t{
+    height: 70px;
+    background: url(../img/topbar.png)repeat-x 0px -80px;
+}
+.top-t .warp {
+    width: 1100px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+}
+.top-t .top-t-logo {
+    width: 162px;
+    height: 42px;
+    float: left;
+    margin-top: 11px;
+    margin-right: 20px;
+    text-indent: -2000px;
+    background: url("../img/topbar.png") no-repeat;
+}
+.top-t-nav ul {
+    float: left;
+    width: 520px;
+    height: 70px;
+    margin-top: -2px;
+}
+.top-t-nav li {
+    float: left;
+    margin-left: -2px;
+    position:relative;
+}
+.top-t-nav li a {
+    color: #cccccc;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    padding-left:20px;
+    text-decoration: none;
+}
+
+.top-t-nav .line {
+    display: inline-block;
+    position: absolute;
+    top: 27px;
+    right: -1px;
+    height:12px;
+    width:1px;
+    background: url("../img/topbar.png") no-repeat 0 -332px;
+}
+#nav-list li s {
+    display: block;
+    height: 70px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+#nav-list .nav-list-bg:hover {
+    background: url("../img/topbar.png") no-repeat 0 -470px;
+}
+#nav-list .nav-list-bg:hover s{
+    background: url("../img/topbar.png") no-repeat right -470px;
+}
+#nav-list .nav-list-bg1 {
+    background: url("../img/topbar.png") no-repeat 0 -152px;
+}
+#nav-list .nav-list-bg1 s{
+    background: url("../img/topbar.png") no-repeat right -152px;
+}
+.top-t-nav li em {
+    width: 14px;
+    height: 9px;
+    display: none;
+    position:absolute;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -7px;
+    background: url("../img/topbar.png") no-repeat -226px 0;
+}
+.show {
+    display: block;
+}
+.top-t-nav .last-li {
+    position:relative;
+}
+.top-t-nav .last-li i{
+    display: block;
+    width: 26px;
+    height: 19px;
+    position:absolute;
+    top: 20px;
+    right: -8px;
+    background: url("../img/topbar.png") no-repeat -191px 0;
+}
+.top-b{
+    height: 35px;
+    background: url("../img/topbar.png") repeat-x 0px -230px;
+}
+.top-t-login {
+    float: left;
+    margin-left: 128px;
+    position: relative;
+    padding-top: 20px;
+}
+.top-t-login input {
+    outline-style: none;
+    border: 0;
+}
+#top-search{
+    width: 30px;
+    height: 31px;
+    position: absolute;
+    left: 0;
+}
+.top-t-logo-txt {
+    width: 180px;
+    height: 31px;
+    color: #666;
+    padding-left: 30px;
+    margin-right: 12px;
+    background: url("../img/topbar.png") no-repeat 0px -550px;
+}
+.top-t-logo-btn {
+    color: #786658;
+    cursor: pointer;
+    background:rgba(0,0,0,0);
+}
+.top-t-login i {
+    display: inline-block;
+    width:12px;
+    height: 7px;
+    margin-left: 6px;
+    background: url("../img/topbar.png") no-repeat -228px -380px;
+}
+#login-r {
+    float: right;
+    margin-top: 6px;
+    height: 40px;
+    position:relative;
+}
+#inner {
+    width: 158px;
+    border-radius: 3px;
+    position: absolute;
+    top: 30px;
+    right: -46px;
+    display: none;
+    border: 1px solid #404040;
+    background: #2a2a2a;
+    z-index: 2;
+}
+#inner ul li a {
+    display: block;
+    padding-left: 40px;
+    height: 38px;
+    color: #ccc;
+    text-decoration: none;
+    line-height: 38px;
+    margin: 0;
+    position: relative;
+}
+#inner li i{
+    display: block;
+    position:absolute;
+}
+#inner .phone i{
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 14px;
+    background: url("../img/toplist.png") no-repeat -3px -2px;
+}
+#inner .ws i {
+    width:18px;
+    height: 15px;
+    top: 10px;
+    left: 8px;
+    background: url("../img/toplist.png") no-repeat -20px -22px
+}
+#inner .qq i {
+    width:14px;
+    height: 16px;
+    top: 8px;
+    left: 8px;
+    background: url("../img/toplist.png") no-repeat -20px -41px;
+}
+#inner .xl i {
+    width:16px;
+    height: 13px;
+    top: 10px;
+    left: 8px;
+    background: url("../img/toplist.png") no-repeat -0px -23px;
+}
+#inner .wy i {
+    width:12px;
+    height: 15px;
+    top: 10px;
+    left: 8px;
+    background: url("../img/toplist.png") no-repeat -2px -42px;
+}
+#inner a:hover {
+    background: rgba(138,138,138,0.2);
+    color: #fff;
+}
+#inner em {
+    display: block;
+    width:16px;
+    height: 9px;
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    margin-left: -8px;
+    background: url("../img/toplist.png") no-repeat -20px 0;
+}
+.top-b .top-b-list{
+    width: 1100px;
+    height: 35px;
+    margin: 0 auto;
+}
+.top-b ul {
+    margin-left: 186px;
+}
+.top-b li {
+    float: left;
+    margin: 6px 23px;
+}
+.top-b li a {
+    color: #fff;
+    padding-left:10px;
+    height: 21px;
+    line-height: 21px;
+    display: inline-block;
+}
+
+.top-b li span {
+    height: 21px;
+    display: inline-block;
+    padding-right: 10px;
+}
+.top-b .fir-li a {
+    background: url("../img/topbar.png") no-repeat 0 -275px;
+}
+.top-b .fir-li span {
+    background: url("../img/topbar.png") no-repeat right -275px;
+
+}
+
+/*top-b栏结束*/
+/*top顶部结束*/
+/*底部开始*/
+.foot{
+    width: 100%;
+    height: 125px;
+    border-top: 1px solid #d5d5d5;
+    background: #f9f9f9;
+}
+.foot-in{
+    padding-top: 35px;
+    padding-left: 20px;
+    width: 980px;
+    margin: 0px auto;
+}
+.foot-l {
+    float: left;
+    padding-right: 60px;
+    padding-left: 50px;
+    position:relative;
+}
+.foot-r {
+    float: right;
+    margin-right: 42px;
+}
+.foot-l .pic {
+    width: 38px;
+    height: 36px;
+    position: absolute;
+    top:2px;
+    left:0;
+    background: url("../img/sprite.png") no-repeat -403px -84px;
+}
+.foot-l .pic-m {
+    background: url("../img/sprite.png") no-repeat -406px -128px;
+}
+.foot-l .small-title {
+    text-decoration: none;
+    color: #666666;
+}
+.foot-l .small-txt {
+    text-decoration: none;
+    color: #999999;
+}
+.foot-r .foot-r-b {
+    padding-left: 20px;
+}
+.foot-r .foot-r-b i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 16px;
+    background: url("../img/icon.png") no-repeat 0 -39px;
+}
+/*底部结束*/

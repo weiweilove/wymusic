@@ -1,0 +1,430 @@
+body, ul, p, h3,h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: top;
+}
+
+.dl-top-banner {
+    width: 100%;
+    height: 483px;
+    background: url(../download/dl-bg.jpg) center;
+}
+
+.dl-top-banner-main {
+    width: 982px;
+    height: 482px;
+    margin: 0 auto;
+}
+
+.dl-top-banner-main-left {
+    width: 545px;
+    height: 465px;
+    padding-left: 35px;
+    padding-top: 17px;
+    position: absolute;
+    float: left;
+}
+
+.dl-top-banner-main-left-con-img {
+    width: 545px;
+    height: 440px;
+    overflow: hidden;
+    /*background: url(../download/banner-1.png) no-repeat;*/
+}
+
+.dl-top-banner-main-left-squ {
+    position: absolute;
+    left: 38px;
+    bottom: 10px;
+    width: 55px;
+    text-align: center;
+}
+
+.dl-span1 {
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(../download/sprite.png) no-repeat -113px -102px;
+}
+
+.dl-span2 {
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(../download/sprite.png) no-repeat -113px -102px;
+}
+
+.dl-span3 {
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    display: inline-block;
+    background: url(../download/sprite.png) no-repeat -113px -102px;
+}
+
+.dl-top-banner-main-rignt {
+    float: right;
+    width: 360px;
+    height: 230px;
+    margin-top: 194px;
+}
+
+.dl-top-banner-main-rignt-t {
+    width: 360px;
+    height: 216px;
+}
+
+.dl-top-banner-main-rignt li {
+    width: 170px;
+    height: 40px;
+    background: url(../download/down_btn.png) no-repeat left top;
+    margin-bottom: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dl-top-banner-main-rignt li:hover {
+    background: url(../download/down_btn.png) no-repeat 0 -50px;
+}
+
+.dl-top-banner-main-rignt-t-l {
+    width: 170px;
+    height: 202px;
+    float: left;
+}
+
+.dl-top-banner-main-rignt-t-r {
+    width: 170px;
+    height: 202px;
+    float: right;
+}
+
+.dl-top-banner-main-rignt-b {
+    width: 360px;
+    height: 14px;
+}
+
+.dl-top-banner-main-rignt-b a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    line-height: 14px;
+}
+
+.dl-top-banner-main-rignt-b a i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    background: url(../download/sprite.png) no-repeat -94px -87px;
+}
+
+.dl-i1 {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    background: url(../download/down_btn.png) no-repeat -62px -110px;
+}
+
+.dl-i2 {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    background: url(../download/down_btn.png) no-repeat -32px -110px;
+}
+
+.dl-i3 {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    background: url(../download/down_btn.png) no-repeat -2px -110px;
+}
+
+.dl-i4 {
+    display: inline-block;
+    width: 17px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 15px;
+    background: url(../download/down_btn.png) no-repeat -130px -110px;
+}
+
+.dl-span4 {
+    display: inline-block;
+    width: 65px;
+    height: 15px;
+    color: white;
+    line-height: 14px;
+    font-size: 15px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    font-family: "Microsoft yahei";
+
+}
+
+.dl-span5 {
+    position: absolute;
+    left: 114px;
+    top: 15px;
+    font-size: 9px;
+    color: #fafcfc;
+    opacity: 0.66;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*广告下第一个dv开始*/
+.dl-one {
+    width: 982px;
+    height: 438px;
+    margin: 0 auto;
+}
+
+.dl-one-left {
+    float: left;
+    width: 370px;
+    height: 93px;
+    margin-left: 20px;
+    margin-top: 174px;
+}
+.dl-one-left h3{
+    font-size: 39px;
+    font-family:microsoft yahei;
+}
+
+.dl-one-left p{
+    font-size: 16px;
+    color: #898989;
+    margin-top:20px;
+    font-family:microsoft yahei;
+}
+
+.dl-one-right {
+    width: 408px;
+    height: 190px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+
+.dl-t{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 438px;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+.dl-two {
+    width: 982px;
+    height: 438px;
+    margin: 0 auto;
+}
+.dl-two-left{
+    width: 408px;
+    height: 190px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.dl-two-right{
+    width: 405px;
+    height: 93px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 174px;
+}
+
+.dl-two-right h3{
+    font-size: 39px;
+    font-family:microsoft yahei;
+}
+
+.dl-two-right p{
+    font-size: 16px;
+    color: #898989;
+    margin-top:20px;
+    font-family:microsoft yahei;
+}
+.dl-two-right-sp{
+    color: #CC0000;
+}
+
+.dl-three-left{
+    float: left;
+    width: 405px;
+    height: 93px;
+    margin-left: 20px;
+    margin-top: 174px;
+}
+
+.dl-three-left h3{
+    font-size: 39px;
+    font-family:microsoft yahei;
+}
+
+.dl-three-left p{
+    font-size: 16px;
+    color: #898989;
+    margin-top:20px;
+    font-family:microsoft yahei;
+}
+
+
+
+
+.dl-last{
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 438px;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+.dl-last-con{
+    width: 1060px;
+    margin: 0 auto;
+    height: 438px;
+}
+
+.dl-last-con-top{
+    height: 140px;
+    text-align: center;
+}
+.dl-last-con-top h4{
+    font-size: 24px;
+    margin-top:53px;
+    font-family:microsoft yahei;
+}
+.dl-last-con-top p{
+    font-family:microsoft yahei;
+    color: #999999;
+    margin-top:8px;
+    font-size: 13px;
+}
+.dl-last-con-bottom ul{
+    height: 144px;
+}
+.dl-last-con-bottom ul li{
+    float: left;
+    margin-right:107px;
+    height: 144px;
+}
+
+.dl-last-con-bottom ul li a{
+    display: block;
+    width: 113px;
+    height: 31px;
+    color: white;
+    padding-left:10px;
+    text-decoration: none;
+}
+.dl-last-con-bottom .dl-last-con-bottom-lastli{
+    float: right;
+    margin-right:0;
+}
+
+a.dl-last-a1{
+    background: url(../download/sprite.png) no-repeat 0 -464px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    font-family:microsoft yahei;
+    margin-top:15px;
+}
+
+a.dl-last-a1:hover{
+    background-position: 0 -495px;
+}
+
+.dl-last-img1{
+    margin-left:8px;
+}
+
+a.dl-last-a2{
+    background: url(../download/sprite.png) no-repeat 0 -526px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    font-family:microsoft yahei;
+    margin-top: 5px;
+}
+
+a.dl-last-a2:hover{
+    background-position: 0 -557px;
+}
+
+.dl-last-img3{
+    margin-left:15px;
+}
+
+a.dl-last-a4{
+    background: url(../download/sprite.png) no-repeat 0 -588px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    font-family:microsoft yahei;
+    margin-top: 5px;
+}
+
+a.dl-last-a4:hover{
+    background-position: 0 -619px;
+}
+.dl-last-img4{
+    margin-left:15px;
+}
+
+a.dl-last-a5{
+    background: url(../download/sprite.png) no-repeat 0 -402px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    font-family:microsoft yahei;
+    margin-top: 9px;
+}
+
+a.dl-last-a5:hover{
+    background-position: 0 -433px;
+}
+.dl-last-img5{
+    margin-left:-5px;
+}
+
+
+
+
+/*二维码*/
+.code {
+    position: fixed;
+    border: 1px solid #D1D1D1;
+    width: 105px;
+    height: 130px;
+    right: 25px;
+    bottom: 200px;
+}
+.code p{
+    font-size: 12px;
+    color: #646464;
+    margin-left:10px;
+}

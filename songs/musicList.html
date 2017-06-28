@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link rel="shortcut icon" href="../img/music.ico">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/loginReg.css"/>
+    <link rel="stylesheet" href="css/main-list.css">
+</head>
+<body>
+
+<!--登录框开始-->
+<div class="login" id="logon">
+    <div id="title" class="title">
+        登录
+        <span id="close-btn">×</span>
+    </div>
+    <div class="login-main">
+        <div class="login-left">
+            <img src="img/platform.png" alt=""/>
+            <a href="#" class="login-phone" id="loginPhone">
+                手机登录
+            </a>
+            <a href="#" class="register" id="register">注册</a>
+        </div>
+        <div class="login-right">
+            <a href="#" class="login-weixin">
+                <span></span>
+                微信登录
+            </a>
+            <a href="#" class="login-qq">
+                <span></span>
+                QQ登录
+            </a>
+            <a href="#" class="login-weibo">
+                <span></span>
+                微博登录
+            </a>
+            <a href="#" class="login-wangyi">
+                <span></span>
+                网易邮箱账号登录
+            </a>
+        </div>
+    </div>
+
+</div>
+<!--登录框结束-->
+
+<!--手机号登录开始-->
+<div class="telLogin " id="loginTel">
+    <div class="telLogin-top" id="loginTelTitle">
+        <p>手机号登录</p>
+        <span id="closeLogin">×</span>
+    </div>
+    <div class="telLogin-main">
+        <div class="telLogin-main-con">
+            <input type="text" value="请输入手机号" class="tel" id="telLogin"/>
+            <input type="text" value="请输入密码" class="pwd" id="pwdLogin"/>
+            <div id="titleLogin"></div>
+            <div class="auto">
+                <input type="checkbox" checked="checked" class="fl" id="checked" />
+                <a href="#" class="fl" id="autoLogin">自动登录</a>
+                <a href="#" class="fr" id="forgetPwd">忘记密码?</a>
+            </div>
+            <a href="#" class="login-next" id="butLogin">登&nbsp;&nbsp;录</a>
+        </div>
+        <div class="telLogin-main-bottom">
+            <a href="#" class="fl" id="otherLogin">&lt;其他登录方式</a>
+            <a href="#" class="fr" id="freeReg">没有账号?免费注册&gt;</a>
+        </div>
+    </div>
+
+</div>
+<!--手机号登录结束-->
+
+<!--手机号注册开始-->
+<div class="telLogin" id="regTel" >
+    <div class="telLogin-top" id="regTelTitle">
+        <p>手机号注册</p>
+        <span id="closeReg">×</span>
+    </div>
+    <div class="telLogin-main">
+        <div class="telLogin-main-con">
+            手机号: <br />
+            <div class="dingwei">
+                <span class="baliu">+86</span>
+                <input type="text" value="请输入手机号" class="tel suojin" id="telReg"/>
+            </div>
+
+            密码: <br />
+            <input type="text" value="设置登录密码,不少于6位" class="pwd" id="pwdReg"/>
+            <a href="#" class="login-next">下一步</a>
+        </div>
+        <div class="telLogin-main-bottom">
+            <a href="#" class="fl" id="returnReg">&lt;返回登录</a>
+        </div>
+    </div>
+
+</div>
+<!--手机号注册结束-->
+
+<!--重置密码开始-->
+<div class="telLogin" id="resetPwd" >
+    <div class="telLogin-top" id="resetPwdTitle">
+        <p>重设密码</p>
+        <span id="closeReset">×</span>
+    </div>
+    <div class="telLogin-main">
+        <div class="telLogin-main-con">
+            手机号: <br />
+            <div class="dingwei">
+                <span class="baliu">+86</span>
+                <input type="text" value="请输入手机号" class="tel suojin" id="telReset"/>
+            </div>
+            密码: <br />
+            <input type="text" value="设置登录密码,不少于6位" class="pwd" id="pwdReset"/>
+            <a href="#" class="login-next">下一步</a>
+        </div>
+        <div class="telLogin-main-bottom">
+            <a href="#" class="fl" id="returnReset">&lt;返回登录</a>
+        </div>
+    </div>
+
+</div>
+<!--重置密码结束-->
+
+<!--遮挡层开始-->
+<div id="mask" class="mask"></div>
+<!--遮挡层结束-->
+<!--登录框结束-->
+<!--顶部开始-->
+<div class="top" id="top">
+    <div class="top-t">
+        <div class="warp clearfix">
+            <a href="../index.html" class="top-t-logo">网易云音乐</a>
+            <div class="top-t-nav">
+                <ul id="nav-list">
+                    <li id="nav-first-li"><a href="../index.html" class="nav-list-bg1"><s>发现音乐</s></a><em></em><span
+                            class="line"></span></li>
+                    <li><a href="../frmy/myMusic.html" class="nav-list-bg"><s>我的音乐</s></a><em></em><span class="line"></span></li>
+                    <li><a href="../frmy/friends.html" class="nav-list-bg"><s>朋友</s></a><em></em><span class="line"></span></li>
+                    <li><a href="../shop/shop.html" class="nav-list-bg"><s>商城</s></a><em></em><span class="line"></span></li>
+                    <li><a href="../musicer/musician.html" class="nav-list-bg"><s>音乐人</s></a><em></em><span class="line"></span></li>
+                    <li class="last-li"><i></i><a href="../download/download.html" class="nav-list-bg"><s>下载客户端</s></a><em></em></li>
+                </ul>
+            </div>
+            <div class="top-t-login" id="login">
+                <div id="top-search"></div>
+                <input type="text" class="top-t-logo-txt" value="单曲/歌手/专辑/歌单/MV/用户">
+                <div id="login-r">
+                    <input type="button" class="top-t-logo-btn" value="登录">
+                    <i></i>
+                    <div id="inner">
+                        <em></em>
+                        <ul>
+                            <li class="phone"><a href="#"><i></i>手机号登录</a></li>
+                            <li class="ws"><a href="#"><i></i>微信登录</a></li>
+                            <li class="qq"><a href="#"><i></i>QQ登录</a></li>
+                            <li class="xl"><a href="#"><i></i>新浪微博登录</a></li>
+                            <li class="wy"><a href="#"><i></i>网易邮箱账号登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="top-b" id="top-b-hide">
+        <div class="top-b-list">
+            <ul class="clearfix" id="topB">
+                <li><a href="http://music.163.com/#"><span>推荐</span></a></li>
+                <li><a href="http://music.163.com/#/discover/toplist"><span>排行榜</span></a></li>
+                <li class="fir-li"><a href="musicList.html"><span>歌单</span></a></li>
+                <li><a href="../FM/radio.html"><span>主播电台</span></a></li>
+                <li><a href="../songer/index.html"><span>歌手</span></a></li>
+                <li><a href="http://music.163.com/#/discover/album"><span>新碟上架</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--顶部结束-->
+
+<!-- 主内容部分开始-->
+<div class="main">
+    <div class="main-center">
+        <!-- top-全部部分开始 -->
+        <div class="main-top">
+            <h3>
+                <span class="list-all">全部</span>
+                <a href="JavaScript:void(0)" id="btnSelectCate">
+                    <i>
+                        选择分类
+                        <em class="u-icn"></em>
+                    </i>    
+                </a>
+            </h3>
+            <div class="hot-new">
+                <a href="#" class="hot">热门</a>
+                <a href="#" class="new">最新</a>
+            </div>
+        </div>
+        <!-- top-全部部分结束 -->
+        
+           <!-- 选择分类列表开始 -->
+        <div class="cateList" id="cateList">
+            <div class="topShadow"><i></i></div>
+            <div class="listBox">
+                <h3><a href="#"><em>全部风格</em></a></h3>
+                <dl>
+                    <dt><i class="myIcon1"></i>语种</dt>
+                    <dd>
+                        <a href="#">华语</a><span>|</span>
+                        <a href="#">欧美</a><span>|</span>
+                        <a href="#">日语</a><span>|</span>
+                        <a href="#">韩语</a><span>|</span>
+                        <a href="#">粤语</a><span>|</span>
+                        <a href="#">小语种 </a><span>|</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><i class="myIcon2"></i>风格</dt>
+                    <dd>
+                        <a href="#">流行</a><span>|</span>
+                        <a href="#">摇滚</a><span>|</span>
+                        <a href="#">民谣</a><span>|</span>
+                        <a href="#">电子</a><span>|</span>
+                        <a href="#">舞曲</a><span>|</span>
+                        <a href="#">说唱</a><span>|</span>
+                        <a href="#">轻音乐</a><span>|</span>
+                        <a href="#">爵士</a><span>|</span>
+                        <a href="#">乡村</a><span>|</span>
+                        <a href="#">R&amp;B/Soul</a><span>|</span>
+                        <a href="#">古典</a><span>|</span>
+                        <a href="#">民族</a><span>|</span>
+                        <a href="#">英伦</a><span>|</span>
+                        <a href="#">金属</a><span>|</span>
+                        <a href="#">朋克</a><span>|</span>
+                        <a href="#">蓝调</a><span>|</span>
+                        <a href="#">雷鬼</a><span>|</span>
+                        <a href="#">世界音乐</a><span>|</span>
+                        <a href="#">拉丁</a><span>|</span>
+                        <a href="#">另类/独立</a><span>|</span>
+                        <a href="#">New&nbsp;Age</a><span>|</span>
+                        <a href="#">古风</a><span>|</span>
+                        <a href="#">后摇</a><span>|</span>
+                        <a href="#">Bossa&nbsp;Nova</a><span>|</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><i class="myIcon3"></i>场景</dt>
+                    <dd>
+                        <a href="#">清晨</a><span>|</span>
+                        <a href="#">夜晚</a><span>|</span>
+                        <a href="#">学习</a><span>|</span>
+                        <a href="#">工作</a><span>|</span>
+                        <a href="#">午休</a><span>|</span>
+                        <a href="#">下午茶</a><span>|</span>
+                        <a href="#">地铁</a><span>|</span>
+                        <a href="#">驾车</a><span>|</span>
+                        <a href="#">运动</a><span>|</span>
+                        <a href="#">旅行</a><span>|</span>
+                        <a href="#">散布</a><span>|</span>
+                        <a href="#">酒吧</a><span>|</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><i class="myIcon4"></i>情感</dt>
+                    <dd>
+                        <a href="#">怀旧</a><span>|</span>
+                        <a href="#">清新</a><span>|</span>
+                        <a href="#">浪漫</a><span>|</span>
+                        <a href="#">性感</a><span>|</span>
+                        <a href="#">伤感</a><span>|</span>
+                        <a href="#">治愈</a><span>|</span>
+                        <a href="#">放松</a><span>|</span>
+                        <a href="#">孤独</a><span>|</span>
+                        <a href="#">感动</a><span>|</span>
+                        <a href="#">兴奋</a><span>|</span>
+                        <a href="#">快乐</a><span>|</span>
+                        <a href="#">安静</a><span>|</span>
+                        <a href="#">思念</a><span>|</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><i class="myIcon5"></i>主题</dt>
+                    <dd>
+                        <a href="#">影视原声</a><span>|</span>
+                        <a href="#">ACG</a><span>|</span>
+                        <a href="#">校园</a><span>|</span>
+                        <a href="#">游戏</a><span>|</span>
+                        <a href="#">70后</a><span>|</span>
+                        <a href="#">80后</a><span>|</span>
+                        <a href="#">90后</a><span>|</span>
+                        <a href="#">网络歌曲</a><span>|</span>
+                        <a href="#">KTV</a><span>|</span>
+                        <a href="#">经典</a><span>|</span>
+                        <a href="#">翻唱</a><span>|</span>
+                        <a href="#">吉他</a><span>|</span>
+                        <a href="#">钢琴</a><span>|</span>
+                        <a href="#">器乐</a><span>|</span>
+                        <a href="#">儿童</a><span>|</span>
+                        <a href="#">榜单</a><span>|</span>
+                        <a href="#">00后</a><span>|</span>
+                    </dd>
+                </dl>
+                
+            </div>
+            <div class="bottomShadow"></div>
+        </div>
+        <!-- 选择分类列表结束 -->
+
+        <!-- 中间歌单部分开始 -->
+        <div class="main-list">
+            <ul class="m-cvrlst">
+                <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-01.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">22万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">【致2017】明白这些道理 活出更好的自己</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">-蓝与灰</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-02.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">52221</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">❄冬日里的美好画面，韩国雪景MV</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">LalisaManoban</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-03.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">52410</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">泓邃：依附系 /畅游音乐深海 深受电音感染</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">岛屿Soliloquy</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-04.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">58777</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">[钢琴&人声] ACG键上捕捉岁月流逝的瞬间！</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">Ohumfkdmss</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-05.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">10万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">『华语』未能说出的爱，都倾注在这些歌里</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">星星挂满半边天丶</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-06.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">86149</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">「冷门&独立」冷门欧美女声音乐|小众精选</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide"><a title="Western-Music" href="/user/home?id=8727513" class="nm nm-icn f-thide s-fc3">Western-Music</a></a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-07.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">119万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">EDM制作人青睐的实力派男歌手们</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">避难所Shelter</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-08.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">22万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">2016年度最受欢迎个性推荐歌曲</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">网易云音乐</a>
+                        <sup class="u-icn u-icn-1"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-09.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">107万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">『华语民谣』止于唇齿，掩于岁月</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">朩朩青尘</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-10.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">50万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">2016 EDM电子音乐百大最IN盘点</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">YoHoJunkoChan</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-11.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">13万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">【八组】特别的那天，特别的你</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">阿圆不圆F5</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-12.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">16万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">【史上最强游戏BGM】自信、鸡血必备高燃buf</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">Matt_Zachary</a>
+                        <sup class="u-icn u-icn-2"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-13.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">11万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">年度人气专辑</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">原创单主</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-14.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">10万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">New | Coachella 2017 - 音乐鉴赏指南</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide"><a title="PurpleBattery" href="/user/home?id=77561297" class="nm nm-icn f-thide s-fc3">PurpleBattery</a></a>
+                        <sup class="u-icn u-icn-2"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-15.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">35万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">『ニコ榜单』2016被翻唱最多的原曲best30</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">彩虹情意</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-16.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">33万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">啪单♥️</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">Yanarrr</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-17.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">62万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">我有所念人，隔在远远乡</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">肥肉啊肥肉</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-18.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">28万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">我的2016年度歌单</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">尚雯婕</a>
+                        <sup class="u-icn u-icn-1"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-19.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">25万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">2016年韩国MELON音源年榜</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">我是榜单控Xargon</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-20.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">115万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">Hardstyle电音，唯爱不变</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">-Headhunterz-</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-21.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">77万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">愿你千山暮雪海棠依旧，不为岁月惊扰</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">卿公子的歌</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-22.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">138万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">2016年度原创榜歌曲TOP100</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">原创君</a>
+                        <sup class="u-icn u-icn-1"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-24.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">71071</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">让人无法抗拒的电音炸曲</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">内科</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-23.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">32万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">那些无法被拒绝忧伤旋律『精选』</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">凯里欧文你是神</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-29.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">22万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">[日系]略耳攻心的花样美男音</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">肥阳Reol-Alfakun</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-27.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">49万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">『励志』我们的战场，该雄就得雄起</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">七羚子</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-25.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">525万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">华语｜那些温暖男声听起来总让人心疼</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">扥你</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-28.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">155万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">「欧美清新电子」让人无法抗拒的美妙旋律</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">CloseToMe</a>
+                    </p>
+                </li>
+
+                 <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-26.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">16万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">王菲2016幻乐一场演唱会歌曲</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">淘漉音乐</a>
+                        <sup class="u-icn u-icn-1"></sup>
+                    </p>
+                </li>
+
+
+                <li>
+                    <div class="u-cover">
+                        <img src="img/music-list-img/main-list-30.jpg" alt="">
+                        <a href="#" class="msk"></a>
+                        <div class="u-cover-bottom">
+                            <a href="javascript:void(0)" class="icon-paly" title="播放"></a>
+                            <span class="headset"></span>
+                            <span class="num">139万</span>
+                        </div>
+                    </div>
+                    <p class="dec">
+                        <a href="#">EDM制作人青睐的实力派女歌手们</a>
+                    </p>
+                    <p>
+                        <span class="by">by</span>
+                        <a href="#" class="thide">避难所Shelter</a>
+                        <sup class="u-icn"></sup>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+        <!-- 中间歌单部分结束 -->
+        
+        <!-- 页码部分开始 -->
+        <div class="pager">
+            <a href="javascript:void(0)" class="z-btn z-pre">上一页</a>
+            <a href="#" class="zpgi one">1</a>
+            <a href="#" class="zpgi">2</a>
+            <a href="#" class="zpgi">3</a>
+            <a href="#" class="zpgi">4</a>
+            <a href="#" class="zpgi">5</a>
+            <a href="#" class="zpgi">6</a>
+            <a href="#" class="zpgi">7</a>
+            <a href="#" class="zpgi">8</a>
+            <span class="zdot">...</span>
+            <a href="#" class="zpgi">42</a>
+            <a href="javascript:void(0)" class="z-btn z-next">下一页</a>
+        </div>
+        <!-- 页码部分结束 -->
+        
+    </div>
+</div>
+<!--主内容部分结束-->
+<!--底部开始-->
+<div class="foot">
+    <div class="foot-in">
+        <div class="foot-l">
+            <a href="#" class="pic"></a>
+            <a href="#" class="small-title">独立音乐人招募计划</a><br>
+            <a href="#" class="small-txt">加入我们&nbsp;即将与超过亿万乐迷互动</a>
+        </div>
+        <div class="foot-l">
+            <a href="#" class="pic pic-m"></a>
+            <a href="#" class="small-title">音乐专栏招募计划</a><br>
+            <a href="#" class="small-txt">加入我们&nbsp;与同道中人交流心得</a>
+        </div>
+        <div class="foot-r">
+            <p><span style="color: #666;">关于网易-客户服务-服务条款-网站导航</span><span style="color: #999;">网易公司版权所有&copy;1997-2017</span></p>
+            <p><span style="color: #999;">杭州乐读科技有限公司运营:</span>
+                <a href="#" style="color: #666;">浙网文[2015]0415-135号</a>&nbsp;&nbsp;
+                <a href="#" style="color: #666; position: relative;" class="foot-r-b"><i></i>意见反馈</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!--底部结束-->
+<!--回顶部开始-->
+<div class="back" id="back">
+    <a href="#"><img src="img/top.png" alt=""></a>
+</div>
+<!--回顶部结束-->
+<script src="js/common.js"></script>
+<script src="../js/jquery-1.12.2.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/musicList.js"></script>
+</body>
+</html>

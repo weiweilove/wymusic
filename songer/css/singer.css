@@ -1,0 +1,162 @@
+
+/*歌手分类部分开始*/
+.main{
+    height: 1500px;
+    border-left:1px solid #D3D3D3;
+    border-right:1px solid #D3D3D3;
+    background: #F9F9F9;
+}
+.main-classify{
+    float: left;
+    width: 160px;
+    padding: 48px 10px 0 10px;
+}
+.recommend{
+    height: 95px;
+}
+.main h3{
+    height: 28px;
+    font: 700 16px/28px microsoft yahei;
+    color:#333333;
+    margin-left: 14px;
+    width: 160px;
+}
+.main .main-classify a{
+    display: block;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 26px;
+    font-family: simsun;
+    color:#333333;
+    background: url(../img/singer.png) no-repeat 0px -30px;
+}
+.main #recommendSinger{
+    border: 1px solid #E2E2E2;
+    height: 27px;
+    line-height: 27px;
+    color: #C20C0C;
+    background-position: -1px -1px;
+}
+.Chinese,.Europe,.Japan,.Korea,.other{
+    height: 120px;
+    padding-top: 13px;
+    padding-bottom: 6px;
+
+}
+.Chinese,.Japan{
+    border-top:1px solid #D4D4D4;
+    border-bottom:1px solid #D4D4D4;
+}
+.Korea{
+    border-bottom:1px solid #D4D4D4;
+}
+/*歌手分类部分结束*/
+
+/*歌手图片名字分类部分开始*/
+.singer{
+    float: right;
+    width: 799px;
+    padding-top:32px;
+    height: 1468px;
+    border-left:1px solid #D3D3D3;
+    background-color: #fff;
+
+}
+.singer-pic{
+    width: 719px;
+    margin: 0 40px;
+}
+.enter-singer,.hot-singer{
+    height: 430px;
+}
+.enter-singer .enter-title{
+    height: 48px;
+    border-bottom: 2px solid #C20C0C;
+}
+.enter-title h2{
+    height: 48px;
+    float: left;
+    font:24px/48px microsoft yahei;
+    color:#333333;
+}
+.enter-title a{
+    display: inline-block;
+    height: 36px;
+    margin-top: 12px;
+    float: right;
+    color: #666666;
+    font:12px/36px microsoft yahei;
+}
+.enter-pic-line{
+    height: 164px;
+    margin-top: 20px;
+}
+.enter-pic{
+    float: left;
+    margin-right: 17px;
+}
+.enter-singer .enter-pic-r{
+    margin-right: 0;
+}
+.enter-pic .enter-singer-name{
+    height: 34px;
+    width: 130px;
+    line-height: 34px;
+}
+.enter-imgone{
+    width: 130px;
+    height: 130px;
+    position: relative;
+}
+.enter-imgone .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/coverall.png) no-repeat 0 -680px;
+}
+.enter-singer-name a{
+    display: inline-block;
+    float: left;
+}
+.enter-singer-name .red-head{
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-top: 7px;
+    float: right;
+    background: url(../img/icon.png) no-repeat 0 -740px;
+}
+
+.singer-name{
+    border-top: 1px dotted #999999;
+    margin: 10px 23px 0;
+    padding-top: 9px;
+}
+.singerOne{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    /*margin: 7px 0;*/
+    margin-left: 17px;
+    float: left;
+}
+.singerOne a{
+    display: block;
+    height: 16px;
+    cursor: pointer;
+    float: left;
+
+}
+
+a.name-head{
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin-top: 8px;
+    float: left;
+    background: url(../img/icon.png) no-repeat 0 -740px;
+}
+
+/*歌手图片名字分类部分结束*/

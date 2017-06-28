@@ -1,0 +1,281 @@
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+/*JLQ*/
+
+/*登录框开始*/
+.login,.telLogin{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    display: none;
+    z-index: 9999;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.8);
+}
+.login {
+    width: 530px;
+    height: 314px;
+    margin-left: -264px;
+    margin-top: -162px;
+}
+.title{
+    height: 38px;
+    line-height:38px;
+    border-bottom: 1px solid #191919;
+    background-color: #2D2D2D;
+    padding-left: 18px;
+    color:#fff;
+    cursor:move;
+    font-family: simsun;
+}
+.title span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    float: right;
+    font-size: 16px;
+    margin-right: 20px;
+    color:#888888;
+    cursor:pointer;
+}
+.login .login-main{
+    height: 234px;
+    width: 528px;
+    padding-top: 40px;
+    border: 1px solid  #878787;
+    border-top:none;
+}
+.login .login-left{
+    text-align: center;
+    width: 299px;
+    height: 204px;
+    float: left;
+    border-right: 1px dotted #CCCCCC;
+}
+.login-left a{
+    width: 224px;
+    height: 30px;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 40px;
+    text-decoration: none;
+    color:black;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+.login-left .login-phone {
+    color:#fff;
+    margin-top: 23px;
+    background:url(../img/button2.png)no-repeat 0 -551px;
+}
+.login-left .login-phone:hover {
+    background-position: 0 -469px;
+}
+.login-left .register {
+    border:1px solid #C3C3C3;
+    background-color: #F8F8F8;
+    font-weight: 700;
+    margin-top: 11px;
+}
+.login-left .register:hover{
+    border: 1px solid #dcdcdc;
+}
+.login .login-right {
+    width: 188px;
+    height: 204px;
+    padding-left: 39px;
+    /*background-color: green;*/
+    float: left;
+}
+.login-right a{
+    width: 149px;
+    height: 38px;
+    line-height: 38px;
+    /*background-color: red;*/
+    display: block;
+    margin-bottom: 16px;
+    color:black;
+}
+.login-right span {
+    width: 38px;
+    height: 38px;
+    display: block;
+    float: left;
+    margin-right: 14px;
+}
+.login-weixin span{
+    background: url(../img/logo.png)no-repeat -150px -670px;
+}
+.login-qq span {
+    background: url(../img/logo.png)no-repeat -190px -670px;
+}
+.login-weibo span {
+    background: url(../img/logo.png)no-repeat -231px -670px;
+}
+.login-wangyi span {
+    background: url(../img/logo.png)no-repeat -271px -670px;
+}
+/*登录框结束*/
+
+/*遮挡层开始*/
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    z-index: 1000;
+}
+/*遮挡层结束*/
+
+
+/*LZZ*/
+
+.telLogin{
+    display: none;
+    z-index: 9999;
+}
+/*login部分开始*/
+.telLogin{
+    width: 530px;
+    height: 314px;
+    margin-left: -265px;
+    margin-top: -157px;
+}
+.telLogin-top{
+    width: 494px;
+    height: 38px;
+    background-color: #2D2D2D;
+    line-height:38px;
+    padding:0 19px 0 17px;
+    color: #fff;
+    cursor:move;
+}
+.telLogin-top p{
+    float: left;
+}
+.telLogin-top span{
+    float: right;
+    font-family:simsun;
+    color:#888888;
+    font-size: 16px;
+    cursor: pointer;
+}
+.telLogin-main{
+    height: 274px;
+    width: 528px;
+    border: 1px solid  #878787;
+    border-top:1px solid #191919;
+}
+.telLogin-main-con{
+    width: 220px;
+    height: 195px;
+    border-bottom:1px solid #C6C6C6;
+    padding:30px 154px 0;
+}
+.telLogin-main-con input{
+    width: 212px;
+    height: 30px;
+    color: #919191;
+    border: 1px solid #CDCDCD;
+    padding-left: 6px;
+    outline-style: none;
+}
+.telLogin-main-con input.tel{
+    margin-bottom: 10px;
+}
+.telLogin-main-con #titleLogin{
+    width: 220px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 3px;
+    color: #E23231;
+    /*display: none;*/
+}
+.telLogin-main-con #titleLogin span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 5px;
+    width: 15px;
+    height: 14px;
+    background: url(../img/icon.png) no-repeat -49px -270px;
+}
+.telLogin-main-con .auto{
+    height: 28px;
+    line-height: 28px;
+}
+.telLogin-main-con .auto input{
+    width: 13px;
+    height: 13px;
+    margin-top:8px;
+}
+.telLogin-main-con .auto a{
+    text-decoration: none;
+    color: #666666;
+}
+.telLogin-main-con .login-next{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    color:#fff;
+    background: url(../img/button2.png) no-repeat 0 -387px ;
+    border-radius: 4px;
+}
+.login-next:hover{
+    background-position: 0 -469px;
+}
+.telLogin-main-bottom{
+    width: 490px;
+    height: 48px;
+    line-height: 48px;
+    padding:0 19px;
+}
+.telLogin-main-bottom a.fl{
+    color:#0C72C3;
+}
+.telLogin-main-bottom a.fr{
+    color:#999999;
+}
+/*login部分结束*/
+
+/*手机注册部分开始*/
+.dingwei{
+    position: relative;
+}
+.telLogin-main .baliu{
+    position: absolute;
+    left: 6px;
+    top: 5px;
+}
+.telLogin-main .suojin{
+    padding-left: 30px;
+    width: 188px;
+}
+#pwdReg{
+    margin-bottom: 20px;
+}
+/*手机注册部分结束*/
+
+/*重设密码部分开始*/
+.telLogin-main-con #pwdReset{
+    margin-bottom: 20px;
+}
+/*重设密码部分结束*/

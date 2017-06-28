@@ -1,0 +1,392 @@
+/*main-top部分开始*/
+
+.main {
+	height: auto;
+}
+.main-center {
+	width: 900px;
+	padding: 40px;
+	position: relative;
+}
+
+.main-top {
+	height: 40px;
+	border-bottom: 2px solid #c20c0c;
+}
+.list-all {
+	color: #333;
+	vertical-align: middle;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+.main-top h3 {
+	font-size: 24px;
+	float: left;
+	font-weight: normal;
+}
+.main-top h3 a {
+	display: inline-block;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	padding: 0 5px 0 0;
+	margin: 2px 0 0 12px;
+	background: url(../img/button2.png) no-repeat right -100px;
+}
+
+.main-top h3 a i {
+	display: inline-block;
+	color: #0c73c2 !important;
+	padding: 1px 10px 0 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../img/button2.png) no-repeat 0 -59px;
+}
+
+.u-icn {
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	margin-left: 5px;
+	vertical-align: middle;
+	background: url(../img/icon.png) no-repeat -70px -543px;
+}
+
+.hot-new {
+	float: right;
+	width: 93px;
+	height: 29px;
+	display: inline-block;
+	background: url(../img/button.png) no-repeat 0 0;
+}
+
+.hot-new .hot {
+	float: left;
+	width: 46px;
+	height: 29px;
+	color: #fff;
+	line-height: 29px;
+	text-align: center;
+
+}
+
+.hot-new .new {
+	float: left;
+	width: 46px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+
+}
+
+/*main-top部分结束*/
+
+
+
+/*选择分类列表*/
+.cateList {
+	width: 720px;
+	position: absolute;
+	top: 75px;
+	left: 0;
+	display: none;
+	z-index: 99;
+}
+
+
+
+.cateList .topShadow {
+	height: 32px;
+	background: url(../img/sltlyr.png) no-repeat;
+	position: relative;
+}
+
+.cateList .topShadow i {
+	position: absolute;
+	left: 132px;
+	top: 2px;
+	width: 24px;
+	height: 11px;
+	background: url(../img/iconall.png) no-repeat -48px 0;
+
+}
+
+
+.cateList .listBox {
+	width: 700px;
+	padding: 0 10px;
+	background: url(../img/sltlyr.png) repeat-y -720px 0;
+}
+
+.cateList .listBox h3 {
+	font-weight: normal;
+	border-bottom: 1px solid #e6e6e6;
+	height: 37px;
+	padding-left: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.cateList .listBox h3 a {
+	display: inline-block;
+	height: 26px;
+	width: 75px;
+	line-height: 26px;
+	text-align: center;
+	background: url(../img/button.png) no-repeat 0 -64px;
+}
+
+.cateList .listBox dl {
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.cateList .listBox dl dt,.cateList .listBox dl dd {float: left;}
+.cateList .listBox dl dt {
+	width: 70px;
+	border-right: 1px solid #e6e6e6;
+	margin-left: 26px;
+	margin-right: -100px;
+	padding-top: 15px;
+	font-weight: bold;
+}
+.cateList .listBox dl dt i {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	background: url(../img/icon.png) no-repeat;
+	margin: 0 8px 4px 0;
+	vertical-align: middle;
+}
+
+.cateList .listBox dl dd {
+	padding: 16px 15px 0 15px;
+	border-left: 1px solid #e6e6e6;
+	line-height: 24px;
+	margin-left: 96px;
+}
+
+.cateList .listBox dl dd a {
+	white-space: nowrap;
+}
+
+
+
+
+.cateList .listBox dl dd span {
+	margin: 0 8px 0 10px;
+	color: #d8d8d8;
+}
+
+.cateList .listBox dl dt .myIcon1 {
+	background-position: -20px -735px;
+}
+.cateList .listBox dl dt .myIcon2 {
+	background-position: 0 -60px;
+}
+.cateList .listBox dl dt .myIcon3 {
+	background-position: 0 -88px;
+}
+.cateList .listBox dl dt .myIcon4 {
+	background-position: 0 -117px;
+}
+.cateList .listBox dl dt .myIcon5 {
+	background-position: 0 -141px;
+}
+
+
+
+.cateList .bottomShadow {
+	width: 720px;
+	height: 32px;
+	background: url(../img/sltlyr.png) no-repeat right 0;
+}
+
+
+
+
+/*main-list部分开始*/
+
+.main-list {
+	width: 950px;
+
+}
+
+.main-list ul {
+	margin:30px 0 0 -50px;
+}
+
+.main-list ul li {
+	float: left;
+	display: inline-block;
+	width: 140px;
+	height: 188px;
+	padding: 0 0 30px 50px;
+	line-height: 1.4;
+	overflow: hidden;
+}
+
+.u-cover {
+	width: 140px;
+	height: 140px;
+	position: relative;
+	display: block;
+	z-index: 1;
+}
+
+.u-cover img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.u-cover .msk {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/coverall.png) no-repeat 0 0;
+}
+
+.u-cover-bottom {
+	position: absolute;
+	height: 27px;
+	width: 100%;
+	color: #ccc;
+	bottom: 0;
+	left: 0;
+	background: url(../img/coverall.png) no-repeat 0 -537px;
+}
+
+.u-cover-bottom .icon-paly {
+	position: absolute;
+	display: inline-block;
+	right: 10px;
+	bottom: 5px;
+	width: 16px;
+	height: 17px;
+	background: url(../img/iconall.png) no-repeat 0 0;
+}
+
+.u-cover-bottom .headset {
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	float: left;
+	margin:9px 5px 9px 10px;
+	background: url(../img/iconall.png) no-repeat 0 -24px;
+}
+.u-cover-bottom .num {
+
+	float: left;
+	margin:7px 0 0 0;
+}
+
+.m-cvrlst li .dec {
+	margin: 8px 0 3px;
+
+}
+.m-cvrlst li p {
+	width: 100%;
+}
+.m-cvrlst li .dec a {
+	display: inline-block;
+	max-width:100%;
+	overflow: hidden; 
+	font-size: 14px;
+	white-space: nowrap;
+	word-wrap: normal;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+}
+.by {
+	color: #999;
+}
+
+.m-cvrlst li p .thide {
+	display: inline-block;
+	color: #666;
+}
+
+.m-cvrlst li p .u-icn {
+	width: 12px;
+	height: 13px;
+	margin-left:0px;
+	margin-top: -4px;
+	background:  url(../img/icon.png) no-repeat -65px -840px;
+}
+
+.m-cvrlst li p .u-icn-1 {
+	width: 11px;
+	height: 13px;
+	background: url(../img/icon.png) no-repeat 0 1px;
+}
+.m-cvrlst li p .u-icn-2 {
+	width: 12px;
+	height: 13px;
+	margin-top: 2px;
+	background: url(../img/icon2.png) no-repeat -110px -190px;
+}
+/*main-list部分结束*/
+
+/*翻页部分开始*/
+.main-center .pager {
+	margin:20px 0;
+	text-align: center;
+}
+
+.main-center .pager a {
+	text-decoration: none;
+}
+
+.pager .z-btn {
+	display: inline-block;
+	color: #333;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	margin:0 1px 0 2px;
+	text-align: left;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.pager .z-pre {
+	width: 47px;
+	padding-left: 22px;
+	color: #cacaca;
+	cursor: default;
+	background: url(../img/button.png) no-repeat 0 -620px;
+}
+.pager .one {
+	color: #fff;
+	border-color: #A2161B;
+	cursor: default;
+	background: url(../img/button.png) no-repeat 0 -650px;
+}
+
+.pager .zpgi {
+	display: inline-block;
+	border: 1px solid #ccc;
+	height: 22px;
+	padding: 0 8px;
+	line-height: 22px;
+	margin: 0 1px 0 2px;
+	border-radius: 2px;
+	vertical-align: middle;
+}
+
+.pager .zpgi:hover {
+	border: 1px solid #666;
+	border-radius: 2px;
+}
+
+.pager .z-next {
+	width: 57px;
+	padding-left: 12px;
+	background: url(../img/button.png) no-repeat -75px -560px;
+}
+
+.pager .z-next:hover {
+	background: url(../img/button.png) no-repeat -75px -590px;
+}
+/*翻页部分结束*/
